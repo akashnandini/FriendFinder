@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>FriendFinder</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Survey Questions</h1>
+    <hr />
+    <form>
+      <div class="form-group">
+        <h3>About You</h3>
+        <h3>Name (Required)</h3>
+        <input id="name" type="text" class="form-control" placeholder="Name (Required)" />
+      </div>
+      <h3>Link to Photo Image (Required)</h3>
+      <div class="form-group">
+        <input id="photo" type="text" class="form-control" placeholder="Link to Profile Photo (Required)" />
+      </div>
+      <div class="form-group">
+        <h3><strong>Question 1</strong></h3>
+        <h5>Your mind is always buzzing with unexplored ideas and plans.</h5>
+
+        <select class="choosen-select" id="question1">
+          <option value="empty"></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h3><strong>Question 2</strong></h3>
+        <h5>
+          Generally speaking, you rely more on your experience than your
+          imagination.
+        </h5>
+        <select class="choosen-select" id="question2">
+          <option value="empty"></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h3><strong>Question 3</strong></h3>
+        <h5>
+          You find it easy to stay relaxed and focused even when there is some
+          pressure.
+        </h5>
+        <select class="choosen-select" id="question3">
+          <option value="empty"></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h3><strong>Question 4</strong></h3>
+        <h5>You rarely do something just out of sheer curiosity.</h5>
+        <select class="choosen-select" class="chosen-select" id="question4">
+          <option value="empty"></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h3><strong>Question 5</strong></h3>
+        <h5>People can rarely upset you.</h5>
+        <select class="choosen-select" id="question5">
+          <option value="empty"></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h3><strong>Question 6</strong></h3>
+        <h5>
+          It is often difficult for you to relate to other people’s feelings.
+        </h5>
+        <select class="choosen-select" id="question6">
+          <option value="empty"></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h3><strong>Question 7</strong></h3>
+        <h5>
+          In a discussion, truth should be more important than people’s
+          sensitivities.
+        </h5>
+        <select class="choosen-select" id="question7">
+          <option value="empty"></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h3><strong>Question 8</strong></h3>
+        <h5>You rarely get carried away by fantasies and ideas.</h5>
+        <select class="choosen-select" id="question8">
+          <option value="empty"></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h3><strong>Question 9</strong></h3>
+        <h5>
+          You think that everyone’s views should be respected regardless of
+          whether they are supported by facts or not.
+        </h5>
+        <select class="choosen-select" id="question9">
+          <option value="empty"></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h3><strong>Question 10</strong></h3>
+        <h5>
+          You feel more energetic after spending time with a group of people.
+        </h5>
+        <select class="choosen-select" id="question10">
+          <option value="empty"></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary submit">Submit</button>
+    </form>
+    <div class="col s4">
+      <p>
+        <a href="/api/friends">API Friends List</a> |
+        <a href="https://github.com/StefanieDing/friend-finder" target="_blank">GitHub Repo</a>
+      </p>
+    </div>
+
+    <!--modal-->
+    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+            </button>
+            <div class="caption" align="center">
+              <h2>Best Match</h2>
+
+            </div>
+            <div class="caption" id="caption" align="center"></div>
+            <img src="" id="imagepreview" height="80%" width="80%" />
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    $(".submit").on("click", function (event) {
+      event.preventDefault();
+
+      // Here we grab the form elements
+      var newFriend = {
+        name: $("#name")
+          .val()
+          .trim(),
+        photo: $("#photo")
+          .val()
+          .trim(),
+        scores: [
+          $("#question1")
+            .val()
+            .trim(),
+          $("#question2")
+            .val()
+            .trim(),
+          $("#question3")
+            .val()
+            .trim(),
+          $("#question4")
+            .val()
+            .trim(),
+          $("#question5")
+            .val()
+            .trim(),
+          $("#question6")
+            .val()
+            .trim(),
+          $("#question7")
+            .val()
+            .trim(),
+          $("#question8")
+            .val()
+            .trim(),
+          $("#question9")
+            .val()
+            .trim(),
+          $("#question10")
+            .val()
+            .trim()
+        ]
+      };
+
+      console.log(newFriend);
+
+      // This line is the magic. It"s very similar to the standard ajax function we used.
+      // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
+      // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
+      // depending on if a tables is available or not.
+      var currentURL = window.location.origin;
+      $.post(currentURL + "/api/friends", newFriend, function (data) {
+
+        // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+        console.log(data);
+        $("#caption").html("<strong>" + data.name + "</Strong>");
+        $("#imagepreview").attr("src", data.photo);
+        $("#imagemodal").modal("show");
+
+        alert("Yay! Added new friend");
+
+        // Clear the form when submitting
+        $("#name").val("");
+        $("#photo").val("");
+        [
+          $("#question1").val(""),
+          $("#question2").val(""),
+          $("#question3").val(""),
+          $("#question4").val(""),
+          $("#question5").val(""),
+          $("#question6").val(""),
+          $("#question7").val(""),
+          $("#question8").val(""),
+          $("#question9").val(""),
+          $("#question10").val("")
+        ];
+      });
+    });
+  </script>
+</body>
+
+</html>
